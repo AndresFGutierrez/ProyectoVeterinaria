@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Sitio web Veterinaria Medellin">
+    <meta name="keywords" content="perros, gatos, animales, productos animales, veterinaria, medico perros">
+    <meta name="author" content="Grupo Js">
+    <meta http-equiv="content-language" content="es">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Servicios</title>
+
+    <!-- CSS -->
+    <!-- Para la nav y para carrusel -->
+    <link rel="stylesheet" href="css/servicios.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+
+    <!-- JavaScript -->
+    <!-- Script para el carrusel productos -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // Espera a que la página esté completamente cargada
+        window.addEventListener('load', () => {
+            // Obtén el elemento con la clase "carga"
+            const carga = document.querySelector('.carga');
+            // Agrega la clase "parar" para quitar la pantalla de carga después de 1 segundo
+            setTimeout(() => {
+                carga.classList.add('parar');
+            }, 2000);
+        });
+    </script>
+
+    <!-- BARRA NAVEGACION -->
+
+    <header>
+        <div class="navWrapper" id="home">
+            <div class=" clearfix">
+                <a href="index.html">
+                    <h2 class="companyName">Veterinarios JS</h2>
+                </a>
+                <nav class="mainNav clearfix">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html" class="smoothScroll">Servicios</a></li>
+                        <li><a href="productos.html" class="smoothScroll">Productos</a></li>
+                        <li><a href="nosotros.html" class="smoothScroll">Nosotros</a></li>
+                        <li><a href="blog.html" class="smoothScroll">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- PORTADA -->
+    <main>
+        <section class="Inicio" id="">
+            <div class="contenedor">
+                <h3>Nuestros Servicios</h3>
+                <p>En nuestra clínica veterinaria en Medellín,
+                    ofrecemos excelentes servicios veterinarios
+                    para garantizar la salud y el bienestar de tu
+                    mascota. En Punto Vet podrás encontrar: </p>
+            </div>
+
+            <div class="imagen">
+                <img src="img/perro_portada.png" alt="">
+            </div>
+        </section>
+
+        <!-- LISTA -->
+
+        <section class="lista">
+            <div class="lista_servicios">
+                <h2>Nuestros Servicios</h2>
+                <ul>
+                    <li><a href="#consulta" class="smoothScroll">Consulta Veterinaria General</a></li>
+                    <li><a href="#vacunacion" class="smoothScroll">Vacunación y Desparasitado</a></li>
+                    <li><a href="#muestras" class="smoothScroll">Servicio de Toma de Muestras</a></li>
+                    <li><a href="#radiografia" class="smoothScroll">Radiografía y Ecografía</a></li>
+                    <li><a href="#guarderia" class="smoothScroll">Guardería</a></li>
+                    <li><a href="#cirugia" class="smoothScroll">Cirugía en Quirófano</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <script>
+            //script para que baje suave
+            $(document).ready(function () {
+                $(".smoothScroll").on("click", function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $("html, body").animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+
+
+        <!-- SECCION Consulta Veterinaria General -->
+
+        <section id="consulta" class="servicios">
+            <div class="servicios_contenedor">
+                <div class="parrafo_y_imagen"> <!-- Nuevo contenedor para el párrafo y la imagen -->
+                    <div>
+                        <h2>Consulta Veterinaria General</h2>
+                        <p>
+                            En nuestra clínica, brindamos Consultas Veterinarias Generales de calidad excepcional.
+                            Nuestro equipo altamente calificado se dedica al bienestar de tus mascotas. Realizamos
+                            evaluaciones exhaustivas para un diagnóstico preciso, enfocándonos en la prevención y
+                            detección temprana de problemas de salud. Tu confianza es nuestra prioridad, y nos
+                            esforzamos por proporcionar un ambiente acogedor y sin estrés. Confía en nosotros para el
+                            cuidado experto de tus amigos peludos. Programa una Consulta Veterinaria General hoy mismo y
+                            asegura la salud y felicidad continua de tu mascota.
+                        </p>
+                        <button class="btn"><a
+                                href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0">Quiero
+                                Contactar¡</a></button>
+                    </div>
+
+                    <figure class="imagen_izquierda">
+                        <img src="img/perro_portada.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION Vacunación y Desparasitado -->
+
+        <section id="vacunacion" class="servicios">
+            <div class="servicios_contenedor">
+                <div class="parrafo_y_imagen">
+                    <figure class="imagen_izquierda">
+                        <img src="img/perro_portada.png" alt="">
+                    </figure>
+
+                    <div>
+                        <h2>Vacunación y Desparasitado</h2>
+                        <p style="text-align: right;">
+                            En nuestra clínica, nos especializamos en Vacunación y Desparasitado para mantener a tus
+                            mascotas saludables. Con protocolos actualizados, personalizamos cada plan de vacunación y
+                            utilizamos tratamientos efectivos para desparasitar. Tu confianza es nuestra prioridad.
+                            Programa una cita hoy para asegurar la salud continua de tus queridos compañeros.
+                            Confía en nosotros para cuidar de la salud preventiva de tus animales. Programa una cita de
+                            Vacunación y Desparasitado hoy mismo y garantiza el bienestar continuo de tus queridos
+                            compañeros. Estamos comprometidos a brindar atención veterinaria excepcional, fusionando
+                            profesionalismo con un toque de calidez y dedicación.
+                        </p>
+                        <button class="btn" style="float: right;"><a
+                                href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0">Quiero
+                                Contactar¡</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION Servicio de Toma de Muestras -->
+
+        <section id="muestras" class="servicios">
+            <div class="servicios_contenedor">
+                <div class="parrafo_y_imagen"> <!-- Nuevo contenedor para el párrafo y la imagen -->
+                    <div>
+                        <h2>Servicio de Toma de Muestras</h2>
+                        <p>
+                            En cada consulta de Toma de Muestras, nuestra prioridad es brindar un servicio eficiente y
+                            compasivo. Entendemos la importancia de obtener resultados rápidos y precisos para abordar
+                            cualquier problema de salud de manera oportuna. La comunicación abierta y transparente es
+                            esencial, y estamos aquí para responder a tus preguntas y proporcionar orientación en cada
+                            paso del camino.
+                            Estamos comprometidos a brindar atención veterinaria excepcional, combinando experiencia
+                            profesional con cuidado compasivo.
+                        </p>
+                        <button class="btn"><a
+                                href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0">Quiero
+                                Contactar¡</a></button>
+                    </div>
+
+                    <figure class="imagen_izquierda">
+                        <img src="img/perro_portada.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION Radiografía y Ecografía -->
+
+        <section id="radiografia" class="servicios">
+            <div class="servicios_contenedor">
+                <div class="parrafo_y_imagen">
+                    <figure class="imagen_izquierda">
+                        <img src="img/perro_portada.png" alt="">
+                    </figure>
+
+                    <div>
+                        <h2>Radiografía y Ecografía</h2>
+                        <p style="text-align: right;">
+                            En nuestra clínica veterinaria, destacamos nuestro servicio especializado de Radiografía y
+                            Ecografía, un aspecto fundamental para el diagnóstico preciso y la atención de la salud de
+                            tus mascotas. Con dedicación y tecnología avanzada, nos comprometemos a proporcionar
+                            resultados detallados para garantizar el mejor cuidado posible.
+                            En cada sesión de Radiografía y Ecografía, nos esforzamos por crear un entorno cómodo y sin
+                            estrés para tus mascotas. La seguridad y el bienestar son nuestras principales prioridades,
+                            y trabajamos diligentemente para obtener resultados rápidos y detallados que respalden un
+                            plan de tratamiento efectivo
+                        </p>
+                        <button class="btn" style="float: right;"><a
+                                href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0">Quiero
+                                Contactar¡</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION Guardería -->
+
+        <section id="guarderia" class="servicios">
+            <div class="servicios_contenedor">
+                <div class="parrafo_y_imagen"> <!-- Nuevo contenedor para el párrafo y la imagen -->
+                    <div>
+                        <h2>Guardería</h2>
+                        <p>
+                            Nuestro personal dedicado y amante de los animales se encarga de cuidar de tus mascotas como
+                            si fueran propias. La Guardería no solo ofrece un lugar seguro para que jueguen y se
+                            relajen, sino que también fomenta la socialización con otros animales, promoviendo un
+                            ambiente estimulante y divertido.
+                            Nuestras instalaciones están diseñadas para proporcionar un espacio limpio y acogedor, con
+                            áreas de juego y descanso. Además, implementamos medidas de seguridad para garantizar que tu
+                            mascota esté protegida en todo momento.
+                        </p>
+                        <button class="btn"><a
+                                href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0">Quiero
+                                Contactar¡</a></button>
+                    </div>
+
+                    <figure class="imagen_izquierda">
+                        <img src="img/perro_portada.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION Cirugía en Quirófano -->
+
+        <section id="cirugia" class="servicios">
+            <div class="servicios_contenedor">
+                <div class="parrafo_y_imagen">
+                    <figure class="imagen_izquierda">
+                        <img src="img/perro_portada.png" alt="">
+                    </figure>
+
+                    <div>
+                        <h2>Cirugía en Quirófano</h2>
+                        <p style="text-align: right;">
+                            Realizamos cirugías con precisión y atención meticulosa, abordando una variedad de
+                            condiciones médicas, desde procedimientos de esterilización hasta cirugías más complejas.
+                            Antes de cualquier intervención, llevamos a cabo evaluaciones exhaustivas para asegurarnos
+                            de entender completamente las necesidades individuales de cada paciente y personalizar el
+                            plan de tratamiento según sea necesario.
+                            Entendemos que la cirugía puede ser una experiencia
+                            estresante, y estamos aquí para responder a tus preguntas, proporcionar información clara
+                            sobre el proceso y ofrecer la tranquilidad que necesitas.
+
+                        </p>
+                        <button class="btn" style="float: right;"><a
+                                href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0">Quiero
+                                Contactar¡</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+
+    <footer>
+        <div class="new_footer">
+            <div class="new_footer_top">
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Contactenos</h4>
+                        <p>Dirección de la empresa<br> Teléfono de contacto<br> Correo electrónico</p>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Redes Sociales</h4>
+                        <div style="display: flex; justify-content: space-between;">
+                            <button class="btn">Facebook</button>
+                            <button class="btn">Twitter</button>
+                        </div>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Horarios</h4>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br> Sábado y Domingo: Cerrado</p>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+                <div class="copyrightFooter" style="text-align: center">
+                    <p>Copyright © veterinarios | Veterinaria y Productos - Diseñado por GRUPO Nose</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- DIV DE CARGA -->
+
+    <div class="carga">
+        <img src="img/carga.gif" width="250px" height="250px" alt="">
+    </div>
+
+</body>
+
+</html>

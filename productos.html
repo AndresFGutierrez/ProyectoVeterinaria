@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Sitio web Veterinaria Medellin">
+    <meta name="keywords" content="perros, gatos, animales, productos animales, veterinaria, medico perros">
+    <meta name="author" content="Grupo Js">
+    <meta http-equiv="content-language" content="es">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Productos</title>
+
+    <!-- CSS -->
+    <!-- Para la nav y para carrusel -->
+    <link rel="stylesheet" href="css/productos.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <!-- Script para el carrusel productos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+
+<body class="body">
+    <!-- BARRA NAVEGACION -->
+
+    <header>
+        <div class="navWrapper" id="home">
+            <div class=" clearfix">
+                <a href="index.html">
+                    <h2 class="companyName">Veterinarios JS</h2>
+                </a>
+                <nav class="mainNav clearfix">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html" class="smoothScroll">Servicios</a></li>
+                        <li><a href="productos.html" class="smoothScroll">Productos</a></li>
+                        <li><a href="nosotros.html" class="smoothScroll">Nosotros</a></li>
+                        <li><a href="blog.html" class="smoothScroll">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- IMAGEN INICIAL Y TEXTO -->
+
+    <main class="contenido">
+        <script>
+            window.onload = function () {
+                var imagenes = document.querySelectorAll('.imagen-carrusel');
+                var indiceActual = 0;
+
+                setInterval(function () {
+                    imagenes[indiceActual].classList.remove('activo');
+                    indiceActual = (indiceActual + 1) % imagenes.length;
+                    imagenes[indiceActual].classList.add('activo');
+                }, 4000);
+            };
+        </script>
+
+        <div class="carrusel">
+            <img class="imagen-carrusel activo" src="img/promocion.png" alt="Imagen 1">
+            <img class="imagen-carrusel" src="img/promoci.png" alt="Imagen 2">
+            <img class="imagen-carrusel" src="img/promocio.jpg" alt="Imagen 3">
+        </div>
+
+        <!-- SECCION PRODUCTOS -->
+
+        <section class="producto">
+            <h1> Más vendidos </h1>
+            <div class="slider">
+                <div>
+                    <article class="content-card2">
+                        <a href="#" class="content-card2__link">
+                            <figure class="content-card2__img">
+                                <img src="https://i0.wp.com/www.amiscot.com/wp-content/uploads/2021/04/Aciflux-Suspencion.jpg?fit=800%2C800&ssl=1"
+                                    alt="imagen card" class="img-card2">
+                            </figure>
+                            <div class="content-card2__data">
+                                <h2 class="content-card2__title">Vitamina Canina</h2>
+                                <p class="content-card2__description">$ 45.000</p>
+                                <a href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0"
+                                    class="btn">Comprar</a>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="content-card2">
+                        <a href="#" class="content-card2__link">
+                            <figure class="content-card2__img">
+                                <img src="https://www.anipet.co/cdn/shop/products/AC1501.jpg?v=1677617771&width=720"
+                                    alt="imagen card" class="img-card2">
+                            </figure>
+                            <div class="content-card2__data">
+                                <h2 class="content-card2__title">Correa para perro</h2>
+                                <p class="content-card2__description">$ 40.000</p>
+                                <a href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0" class="btn">Comprar</a>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="content-card2">
+                        <a href="#" class="content-card2__link">
+                            <figure class="content-card2__img">
+                                <img src="https://www.anipet.co/cdn/shop/products/AC1501.jpg?v=1677617771&width=720"
+                                    alt="imagen card" class="img-card2">
+                            </figure>
+                            <div class="content-card2__data">
+                                <h2 class="content-card2__title">Correa para perro</h2>
+                                <p class="content-card2__description">$ 40.000</p>
+                                <a href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0" class="btn">Comprar</a>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="content-card2">
+                        <a href="#" class="content-card2__link">
+                            <figure class="content-card2__img">
+                                <img src="https://www.anipet.co/cdn/shop/products/AC1501.jpg?v=1677617771&width=720"
+                                    alt="imagen card" class="img-card2">
+                            </figure>
+                            <div class="content-card2__data">
+                                <h2 class="content-card2__title">Correa para perro</h2>
+                                <p class="content-card2__description">$ 40.000</p>
+                                <a href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0" class="btn">Comprar</a>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCRIPT SLIDER DE PRODUCTOS -->
+        <script>
+            $(document).ready(function () {
+                $('.slider').slick({
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 3,
+                    autoplay: true,
+                    autoplaySpeed: 2000
+                });
+            });
+        </script>
+
+        <section class="contenedor-productos">
+            <a href="#" class="tarjetas">
+                <img src="https://i0.wp.com/www.amiscot.com/wp-content/uploads/2021/04/Aciflux-Suspencion.jpg?fit=800%2C800&ssl=1"
+                    alt="" class="imagen-producto">
+                <div>
+                    <h1>Vitaminas para Caninos</h1>
+                    <h3>$45.000</h3>
+                    <p>en 36 cuotas de $767.78</p>
+                </div>
+                <img src="./img/calificación.jpg" alt="">
+
+            </a>
+            <a href="#" class="tarjetas">
+                <img src="https://i0.wp.com/www.amiscot.com/wp-content/uploads/2021/04/Aciflux-Suspencion.jpg?fit=800%2C800&ssl=1"
+                    alt="" class="imagen-producto">
+                <div>
+                    <h1>Vitaminas para Caninos</h1>
+                    <h3>$45.000</h3>
+                    <p>en 36 cuotas de $767.78</p>
+                </div>
+                <img src="./img/calificación.jpg" alt="">
+
+            </a>
+            <a href="#" class="tarjetas">
+                <img src="https://i0.wp.com/www.amiscot.com/wp-content/uploads/2021/04/Aciflux-Suspencion.jpg?fit=800%2C800&ssl=1"
+                    alt="" class="imagen-producto">
+                <div>
+                    <h1>Vitaminas para Caninos</h1>
+                    <h3>$45.000</h3>
+                    <p>en 36 cuotas de $767.78</p>
+                </div>
+                <img src="./img/calificación.jpg" alt="">
+
+            </a>
+            <a href="#" class="tarjetas">
+                <img src="https://i0.wp.com/www.amiscot.com/wp-content/uploads/2021/04/Aciflux-Suspencion.jpg?fit=800%2C800&ssl=1"
+                    alt="" class="imagen-producto">
+                <div>
+                    <h1>Vitaminas para Caninos</h1>
+                    <h3>$45.000</h3>
+                    <p>en 36 cuotas de $767.78</p>
+                </div>
+                <img src="./img/calificación.jpg" alt="">
+
+            </a>
+            <a href="#" class="tarjetas">
+                <img src="https://i0.wp.com/www.amiscot.com/wp-content/uploads/2021/04/Aciflux-Suspencion.jpg?fit=800%2C800&ssl=1"
+                    alt="" class="imagen-producto">
+                <div>
+                    <h1>Vitaminas para Caninos</h1>
+                    <h3>$45.000</h3>
+                    <p>en 36 cuotas de $767.78</p>
+                </div>
+                <img src="./img/calificación.jpg" alt="">
+
+            </a>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PAGINA -->
+
+    <footer>
+        <div class="new_footer">
+            <div class="new_footer_top">
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Contactenos</h4>
+                        <p>Dirección de la empresa<br> Teléfono de contacto<br> Correo electrónico</p>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Redes Sociales</h4>
+                        <div style="display: flex; justify-content: space-between;">
+                            <button class="btn">Facebook</button>
+                            <button class="btn">Twitter</button>
+                        </div>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Horarios</h4>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br> Sábado y Domingo: Cerrado</p>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+                <div class="copyrightFooter" style="text-align: center">
+                    <p>Copyright © veterinarios | Veterinaria y Productos - Diseñado por GRUPO Nose</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- SECCION PANTALLA DE CARGA -->
+
+    <div class="carga">
+        <img src="img/carga.gif" width="250px" height="250px" alt="logo imagen de carga">
+    </div>
+
+    <script>
+        // Espera a que la página esté completamente cargada
+        window.addEventListener('load', () => {
+            // Obtén el elemento con la clase "carga"
+            const carga = document.querySelector('.carga');
+            // Agrega la clase "parar" para quitar la pantalla de carga después de 1 segundo
+            setTimeout(() => {
+                carga.classList.add('parar');
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

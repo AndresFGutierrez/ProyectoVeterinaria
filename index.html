@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Sitio web Veterinaria Medellin">
+    <meta name="keywords" content="perros, gatos, animales, productos animales, veterinaria, medico perros">
+    <meta name="author" content="Grupo Js">
+    <meta http-equiv="content-language" content="es">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Inicio</title>
+
+    <!-- CSS -->
+    <!-- Para la nav y para carrusel -->
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link href="https://fonts.googlea6pis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+
+    <!-- JavaScript -->
+    <!-- Script para el carrusel productos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+
+<body>
+    <!-- BARRA NAVEGACION -->
+
+    <header>
+        <div class="navWrapper" id="home">
+            <div class=" clearfix">
+                <a href="index.html">
+                    <h2 class="companyName">Veterinarios JS</h2>
+                </a>
+                <nav class="mainNav clearfix">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html" class="smoothScroll">Servicios</a></li>
+                        <li><a href="productos.html" class="smoothScroll">Productos</a></li>
+                        <li><a href="nosotros.html" class="smoothScroll">Nosotros</a></li>
+                        <li><a href="blog.html" class="smoothScroll">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- IMAGEN INICIAL Y TEXTO -->
+
+    <main>
+        <section class="hero">
+            <div class="innerWrapper">
+                <h1>Servicios al Alcance de Todos</h1>
+                <h3>Cuidamos tu mascota con amor </h3>
+            </div>
+        </section>
+
+        <!-- SECCION SERVICIOS -->
+
+        <section class="servicios" id="servicios">
+            <h1> Servicios </h1>
+            <div class="caja1">
+                <div class="caja"><a href="servicios.html#consulta">
+                        <img class="imagen2"
+                            src="https://www.zooplus.es/magazine/wp-content/uploads/2019/02/vacunas-para-perros-768x512.jpg"
+                            width="100px" alt="">
+                        <div class="contenido">
+                            <img src="img/logo_nofondo.png" width="100px" alt="">
+                            <h3 style="margin: 0.75em;">Consulta Veterinaria General</h3>
+                            <p style="margin: 0.8em;">Consulta veterinaria a domicilio en Medellín, Envigado, Sabaneta,
+                                Itagui, Caldas</p>
+                        </div>
+                    </a></div>
+
+                <div class="caja"><a href="servicios.html#vacunacion">
+                        <img class="imagen2" src="img/cveterinaria.jpg" width="100px" alt="">
+                        <div class="contenido">
+                            <img src="img/logo_nofondo.png" width="100px" alt="">
+                            <h3>Vacunación y Desparasitado</h3>
+                            <p>De una manera acertada con su macota se presta el servicio de vacunación y
+                                desparasitación de perros y gatos</p>
+                        </div>
+                    </a></div>
+
+                <div class="caja"><a href="servicios.html#muestras">
+                        <img class="imagen2"
+                            src="https://www.zooplus.es/magazine/wp-content/uploads/2019/02/vacunas-para-perros-768x512.jpg"
+                            width="100px" alt="">
+                        <div class="contenido">
+                            <img src="img/logo_nofondo.png" width="100px" alt="">
+                            <h3>Servicio de Toma de Muestras</h3>
+                            <p>Nos dirigimos hasta su casa para tomar muestras que sean necesarias de su perro o gato,
+                                generando resultados rápidos</p>
+                        </div>
+                    </a></div>
+
+                <div class="caja"><a href="servicios.html#radiografia">
+                        <img class="imagen2" src="img/cveterinaria.jpg" width="100px" alt="">
+                        <div class="contenido">
+                            <img src="img/logo_nofondo.png" width="100px" alt="">
+                            <h3 style="margin: 0.65em;">Radiografía y ecografía</h3>
+                            <p style="margin: 0.65em;">Vamos hasta su residencia para realizar la radiografía o
+                                ecografía de su perro o gato
+                                informando diagnostico rápidamente</p>
+                        </div>
+                    </a></div>
+
+                <div class="caja"><a href="servicios.html#guarderia">
+                        <img class="imagen2"
+                            src="https://www.zooplus.es/magazine/wp-content/uploads/2019/02/vacunas-para-perros-768x512.jpg"
+                            width="100px" alt="">
+                        <div class="contenido">
+                            <img src="img/logo_nofondo.png" width="100px" alt="">
+                            <h3 style="margin: 1em;">Guarderia</h3>
+                            <p style="margin: 1em;">Cuidamos tu mascota con amor comprension y ternura, dejalo en
+                                nuestras manos</p>
+                        </div>
+                    </a></div>
+                <div class="caja"><a href="servicios.html#cirugia">
+                        <img class="imagen2" src="img/cveterinaria.jpg" width="100px" alt="">
+                        <div class="contenido">
+                            <img src="img/logo_nofondo.png" width="100px" alt="">
+                            <h3>Cirugía en quirófano</h3>
+                            <p>Contamos instalaciones idóneas para la realización de esterilizaciones, profilaxis,
+                                cirugías de tejidos blandos y ortopédicas</p>
+                        </div>
+                    </a></div>
+            </div>
+        </section>
+
+        <!-- SECCION ARTICULOS -->
+        <section class="cards">
+            <h1> Articulos Blog </h1>
+            <article class="content-card">
+                <a href="blog.html#cuidar" class="content-card__link">
+                    <figure class="content-card__img">
+                        <img src="img/1540470933627.jpg" alt="imagen card" class="img-card">
+                    </figure>
+                    <div class="content-card__data">
+                        <h2 class="content-card__title">Como cuidar bien de mi cachorro. </h2>
+                        <p class="content-card__description">Los cuidados de un cachorro no siempre son fáciles porque,
+                            al igual que pasa con un bebé, son muchos los aspectos que hay que tener en cuenta. Lo más
+                            conveniente es que consultes a un veterinario sobre las pautas a seguir para el cuidado de
+                            un cachorro durante sus primeras semanas de vida, ya que es quien mejor puede aconsejarte.
+                            De todos modos, te mostramos cuáles son los principales consejos y trucos para cuidar a un
+                            perrito, de manera adecuada, y …
+                        </p>
+                        <a href="blog.html#cuidar" class="btn">Seguir leyendo</a>
+                    </div>
+                </a>
+            </article>
+            <article class="content-card">
+                <a href="blog.html#mayor" class="content-card__link">
+                    <figure class="content-card__img">
+                        <img src="img/perros-viejos-1.jpg.webp" alt="imagen card" class="img-card">
+                    </figure>
+                    <div class="content-card__data">
+                        <h2 class="content-card__title">Como cuidar bien de mi peludo adulto mayor.</h2>
+                        <p class="content-card__description">Es nuestro adorable viejito. Ese que, a pesar de sus años,
+                            sigue siendo nuestro mejor compañero, y uno de los seres que más queremos en este mundo. Por
+                            eso y de la misma manera que hemos hecho en todas las etapas de su vida, cuidar del
+                            bienestar del perro anciano es fundamental para garantizarle una buena calidad de vida en
+                            sus últimos años. Una manera de acompañarle pero, también, de velar por su salud.
+                            De la misma manera que nos informamos sobre qué necesita …
+                        </p>
+                        <a href="blog.html#mayor" class="btn">Seguir leyendo</a>
+                    </div>
+                </a>
+            </article>
+            <article class="content-card">
+                <a href="blog.html#curio" class="content-card__link">
+                    <figure class="content-card__img">
+                        <img src="img/dog-wearing-fake-mustache-royalty-free-image-136789966-1542377192.jpg"
+                            alt="imagen card" class="img-card">
+                    </figure>
+                    <div class="content-card__data">
+                        <h2 class="content-card__title">10 curiosidades que (casi seguro) desconoces de tu perro. </h2>
+                        <p class="content-card__description">El perro es el mejor amigo del hombre, eso lo sabemos.
+                            Pero, ¿desde cuándo se da esta relación tan especial? Los datos hablan de nada menos que
+                            15.000 años. Y en todo este tiempo, hemos aprendido muchas cosas acerca de ellos, aunque
+                            siempre nos queda alguna por descubrir…
+                            1. Tu perro es tan inteligente como un niño de dos años: ¿Sabías que los perros comprenden
+                            aproximadamente 250 …
+                        </p>
+                        <a href="blog.html#curio" class="btn">Seguir leyendo</a>
+                    </div>
+                </a>
+            </article>
+        </section>
+
+        <!-- SECCION PRODUCTOS -->
+
+        <section class="producto">
+            <h1> Productos </h1>
+            <div class="slider">
+                <div>
+                    <article class="content-card2">
+                        <a href="productos.html" class="content-card2__link">
+                            <figure class="content-card2__img">
+                                <img src="https://i0.wp.com/www.amiscot.com/wp-content/uploads/2021/04/Aciflux-Suspencion.jpg?fit=800%2C800&ssl=1"
+                                    alt="imagen card" class="img-card2">
+                            </figure>
+                            <div class="content-card2__data">
+                                <h2 class="content-card2__title">Vitamina canina</h2>
+                                <p class="content-card2__description">$ 45.000</p>
+                                <a href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0"
+                                    class="btn">Comprar</a>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="content-card2">
+                        <a href="productos.html" class="content-card2__link">
+                            <figure class="content-card2__img">
+                                <img src="https://www.anipet.co/cdn/shop/products/AC1501.jpg?v=1677617771&width=720"
+                                    alt="imagen card" class="img-card2">
+                            </figure>
+                            <div class="content-card2__data">
+                                <h2 class="content-card2__title">Correa para perro</h2>
+                                <p class="content-card2__description">$ 40.000</p>
+                                <a href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0"
+                                    class="btn">Comprar</a>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="content-card2">
+                        <a href="productos.html" class="content-card2__link">
+                            <figure class="content-card2__img">
+                                <img src="https://www.anipet.co/cdn/shop/products/AC1501.jpg?v=1677617771&width=720"
+                                    alt="imagen card" class="img-card2">
+                            </figure>
+                            <div class="content-card2__data">
+                                <h2 class="content-card2__title">Correa para perro</h2>
+                                <p class="content-card2__description">$ 40.000</p>
+                                <a href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0"
+                                    class="btn">Comprar</a>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="content-card2">
+                        <a href="productos.html" class="content-card2__link">
+                            <figure class="content-card2__img">
+                                <img src="https://www.anipet.co/cdn/shop/products/AC1501.jpg?v=1677617771&width=720"
+                                    alt="imagen card" class="img-card2">
+                            </figure>
+                            <div class="content-card2__data">
+                                <h2 class="content-card2__title">Correa para perro</h2>
+                                <p class="content-card2__description">$ 40.000</p>
+                                <a href="https://api.whatsapp.com/send/?phone=573052391027&text&type=phone_number&app_absent=0"
+                                    class="btn">Comprar</a>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCRIPT SLIDER DE PRODUCTOS -->
+        <script>
+            $(document).ready(function () {
+                $('.slider').slick({
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 3,
+                    autoplay: true,
+                    autoplaySpeed: 2000
+                });
+            });
+        </script>
+
+        <!-- SECCION FORMULARIO -->
+
+        <section class="formulario">
+            <div class="fondo">
+                <h1>AGENDAR CITA</h1>
+                <form autocomplete="off" action="/solicitud/cita" method="POST">
+                    <div>
+                        <input type="text" id="nombreMascota" name="nombreMascota" required>
+                        <span class="barra"></span>
+                        <label for="nombreMascota">Nombre Mascota</label>
+                    </div>
+                    <div>
+                        <input type="number" id="edadMascota" name="edadMascota" required>
+                        <span class="barra"></span>
+                        <label for="edadMascota">Edad Mascota</label>
+                    </div>
+                    <div>
+                        <input type="text" id="razaMascota" name="razaMascota" required>
+                        <span class="barra"></span>
+                        <label for="razaMascota">Raza</label>
+                    </div>
+                    <div>
+                        <input type="date" id="fechaCita" name="fechaCita" required>
+                        <span class="barra"></span>
+                        <label for="fechaCita">Fecha</label>
+                    </div>
+                    <div>
+                        <input type="time" id="horaCita" name="horaCita" required>
+                        <span class="barra"></span>
+                        <label for="horaCita">Hora</label>
+                    </div>
+                    <div>
+                        <input type="text" id="nombreDueno" name="nombreDueno" required>
+                        <span class="barra"></span>
+                        <label for="nombreDueno">Nombre Amo</label>
+                    </div>
+
+                    <!-- <input type="button" value="Agendar Cita" class="btn"> -->
+                    <button style="margin: 2em;" class="btn">Solicitar Cita</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+
+    <footer>
+        <div class="new_footer">
+            <div class="new_footer_top">
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Contactenos</h4>
+                        <p>Dirección de la empresa<br> Teléfono de contacto<br> Correo electrónico</p>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Redes Sociales</h4>
+                        <div style="display: flex; justify-content: space-between;">
+                            <button class="btn">Facebook</button>
+                            <button class="btn">Twitter</button>
+                        </div>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Horarios</h4>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br> Sábado y Domingo: Cerrado</p>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+                <div class="copyrightFooter" style="text-align: center">
+                    <p>Copyright © veterinarios | Veterinaria y Productos - Diseñado por GRUPO Nose</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- SECCION PANTALLA DE CARGA -->
+
+    <div class="carga">
+        <img src="img/carga.gif" width="250px" height="250px" alt="logo imagen de carga">
+    </div>
+
+    <script>
+        // Espera a que la página esté completamente cargada
+        window.addEventListener('load', () => {
+            // Obtén el elemento con la clase "carga"
+            const carga = document.querySelector('.carga');
+            // Agrega la clase "parar" para quitar la pantalla de carga después de 1 segundo
+            setTimeout(() => {
+                carga.classList.add('parar');
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

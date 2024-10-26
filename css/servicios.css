@@ -1,0 +1,553 @@
+/* IGUAL PARA TODAS LAS PAGINAS */
+body {
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Abril Fatface', serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Añade esta línea para controlar la barra de desplazamiento vertical */
+    background: hsl(0, 0%, 90%);
+    font-size: 16px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: black;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0 0 30px 0;
+}
+
+/* Estilo para la barra de desplazamiento */
+body::-webkit-scrollbar {
+    width: 6px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el track (fondo) de la barra de desplazamiento */
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+    /* Fondo transparente del track */
+}
+
+/* Estilo para el thumb (agarre) de la barra de desplazamiento */
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color del thumb */
+    border-radius: 6px;
+    /* Bordes redondeados del thumb */
+}
+
+/* Estilo para el thumb en estado hover */
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Cambia el color al pasar el mouse sobre el thumb */
+}
+
+/* FIN BARRA DEZPLAZAMIENTO */
+
+/* NAV SECTION */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.innerWrapper {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.companyName {
+    padding: 21px 17px 20px 15%;
+    margin: 0;
+    float: left;
+    color: #fff;
+    width: 45%;
+    background: rgb(111, 168, 220, 0.7);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: left;
+    font-variant: small-caps;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+    width: 55%;
+    float: right;
+}
+
+.navWrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(111, 168, 220, 0.7);
+    z-index: 1000;
+    /* Asegura que la barra de navegación esté por encima del resto del contenido */
+}
+
+header nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-right: 20px solid rgb(111, 168, 220, 0.7);
+}
+
+header nav ul li {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    background: rgb(111, 168, 220, 0.7);
+    list-style: none;
+}
+
+header nav ul li:hover {
+    background: none;
+    font-style: bold;
+    transform: scale(1.2);
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 25px 0;
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+
+header nav ul li a:focus {
+    outline: none;
+}
+
+/* HEAD SECTION */
+
+.hero {
+    background: url(https://i0.wp.com/www.encantadordeperros.es/wp-content/uploads/2014/03/151.jpg?fit=1920%2C1080&ssl=1);
+    text-align: center;
+    text-shadow: 1px 0 2px #595859;
+}
+
+.hero h1 {
+    font-size: 5.5rem;
+    margin: 0;
+    padding-top: 200px;
+    font-family: 'Abril Fatface', serif;
+    color: #fff;
+}
+
+.hero h3 {
+    padding-bottom: 250px;
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+@media (max-width:900px) {
+    .companyName {
+        width: 100%;
+        text-align: center;
+        padding: 4% 4%;
+    }
+
+    .mainNav {
+        width: 100%;
+    }
+
+    header nav ul {
+        border: none;
+    }
+
+    header nav ul li a {
+        padding: 25px 2%;
+    }
+}
+
+/* Estilos generales del footer */
+
+.new_footer_top .footer_bg {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+    right: -0.9%;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+    z-index: 1;
+    background: url("https://i.pinimg.com/originals/21/00/8c/21008c1d08c8ba85df54be8302ae3037.gif") no-repeat center center;
+    width: 145px;
+    height: 105px;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    z-index: 1;
+    background: url("https://i.gifer.com/ZbpA.gif") no-repeat center center;
+    width: 140px;
+    height: 85px;
+    background-size: 100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+@-moz-keyframes myfirst {
+    0% {
+        left: -25%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes myfirst {
+    0% {
+        left: -25%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes myfirst {
+    0% {
+        left: -25%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* Footer general */
+footer {
+    /* Mantén los estilos existentes */
+    max-width: 100%;
+    background-color: rgba(111, 167, 220, 0.932);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Secciones del footer */
+footer div {
+    flex: 1;
+    margin: 20px;
+}
+
+/* Botones del footer */
+button {
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.726);
+}
+
+/* Estilos para pantallas pequeñas (ejemplo: hasta 600px) */
+@media (max-width: 600px) {
+
+    /* Redefine estilos para el footer en pantallas pequeñas */
+    footer div {
+        flex: 100%;
+        text-align: center;
+    }
+
+    /* Ajusta estilos para los botones en pantallas pequeñas */
+    button {
+        width: 100%;
+    }
+}
+
+
+/* PANTALLA DE CARGA */
+.carga {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carga.parar {
+    top: -120%;
+}
+
+/* Estilos Base (reset) */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Slab:300,400');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* botones */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 2.4rem;
+    /* Ajusta el padding para hacer el botón un poco más pequeño */
+    border: .2rem solid var(--blue);
+    color: var(--blue);
+    cursor: pointer;
+    font-size: 1rem;
+    /* Ajusta el tamaño del texto del botón */
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    /* Agrega transiciones para colores */
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--blue);
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.btn:hover {
+    color: #fff;
+    /* Cambia el color del texto al hacer hover */
+    background-color: var(--blue);
+    /* Cambia el color de fondo al hacer hover */
+}
+
+/* botones */
+:root {
+    --blue: #007bff;
+    /* Define la variable --blue con un valor de color azul */
+}
+
+section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* Ajusta el valor según sea necesario */
+}
+
+/* hasta aqui IGUAL PARA TODAS LAS PAGINAS */
+
+/* Portada */
+
+.Inicio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.Inicio .contenedor {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.Inicio .imagen {
+    flex: 1 1 40rem;
+}
+
+.Inicio .imagen img {
+    width: 85%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(3rem);
+    }
+}
+
+.Inicio .contenedor h3 {
+    font-size: 5rem;
+    color: #333;
+}
+
+.Inicio .contenedor p {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+/* lista */
+
+.lista {
+    background-color: rgba(111, 167, 220, 0.932);
+    align-items: center;
+    padding: 1% 4% 4% 1%;
+    margin-top: 0%;
+    padding-top: 0%;
+    /* Arriba, Derecha, Abajo */
+}
+
+.lista_servicios {
+    margin-top: 0%;
+    padding-top: 0%;
+    /* Ajusta este valor según sea necesario */
+}
+
+.lista_servicios li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.lista_servicios li:hover {
+    background-color: rgba(194, 211, 226, 0.932);
+    /* Cambia el color al pasar el mouse sobre el elemento */
+}
+
+.lista_servicios a {
+    text-decoration: none;
+}
+
+.lista_servicios li:hover a {
+    color: #fff;
+    /* Cambié el color del texto al pasar el mouse para mayor contraste */
+}
+
+/* estilos seccion imagen a la derecha texto a la izquierda */
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    align-items: center;
+    padding: 0% 3% 1.5% 3%;
+    margin: 0% 3% 1.5% 3%;
+    /* Ajusta el valor de margen inferior */
+}
+
+.servicios_contenedor * {
+    margin-bottom: 0.5rem;
+    /* Puedes ajustar este valor según sea necesario */
+}
+
+.servicios .servicios_contenedor {
+    flex: 1 1 40rem;
+    padding-top: 1.5rem;
+}
+
+.servicios .servicios_contenedor .parrafo_y_imagen {
+    /* Nuevo contenedor para el párrafo y la imagen */
+    display: flex;
+}
+
+
+.imagen_izquierda img {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0%;
+}
+
+
+.servicios .imagen_izquierda {
+    flex: 1 1 40rem;
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea la imagen a la derecha */
+}
+
+.servicios .imagen_izquierda img {
+    padding: 0.5rem;
+    margin: 0%;
+}
+
+.servicios .servicios_contenedor p {
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    max-width: 25em;
+    /* Cambiado 'width' a 'max-width' para que no cause problemas */
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Sitio web Veterinaria Medellin">
+    <meta name="keywords" content="perros, gatos, animales, productos animales, veterinaria, medico perros">
+    <meta name="author" content="Grupo Js">
+    <meta http-equiv="content-language" content="es">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Nosotros</title>
+
+    <!-- CSS -->
+    <!-- Para la nav y para carrusel -->
+    <link rel="stylesheet" href="css/nosotros.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+
+    <!-- JavaScript -->
+    <!-- Script para el carrusel productos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // Espera a que la página esté completamente cargada
+        window.addEventListener('load', () => {
+            // Obtén el elemento con la clase "carga"
+            const carga = document.querySelector('.carga');
+            // Agrega la clase "parar" para quitar la pantalla de carga después de 1 segundo
+            setTimeout(() => {
+                carga.classList.add('parar');
+            }, 2000);
+        });
+    </script>
+
+    <!-- BARRA NAVEGACION -->
+
+    <header>
+        <div class="navWrapper" id="home">
+            <div class=" clearfix">
+                <a href="index.html">
+                    <h2 class="companyName">Veterinarios JS</h2>
+                </a>
+                <nav class="mainNav clearfix">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html" class="smoothScroll">Servicios</a></li>
+                        <li><a href="productos.html" class="smoothScroll">Productos</a></li>
+                        <li><a href="nosotros.html" class="smoothScroll">Nosotros</a></li>
+                        <li><a href="blog.html" class="smoothScroll">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedortodo">
+            <section class="principal">
+                <h1>Sobre Nosotros</h1>
+                <div class="somos">
+                    <h2>Que Somos?</h2>
+                    <p>
+                        Somos un equipo humano idóneo, que contribuye
+                        al cuidado de la vida y la salud de las mascotas
+                        mediante un servicio integral, diferenciado con
+                        énfasis en el cuidado crítico, buscando el
+                        bienestar de todo el grupo familiar.
+                    </p>
+                </div>
+
+                <div class="soñamos">
+                    <h2>Que soñamos?</h2>
+                    <p>Queremos ser una empresa sólida que
+                        permanezca en la mente y en el corazón de
+                        los usuarios y colaboradores, por eso soñamos
+                        con:
+                        <br>
+                        <br>
+                        - Ser una clínica de referencia en el área
+                        metropolita de Medellín.<br>
+                        - Estar entre los mejores empleadores del
+                        sector veterinario del país.<br>
+                        - Tener la infraestructura adecuada para la
+                        prestación de los servicios que ofrecemos,
+                        que sea amigable con los pacientes, usuarios,
+                        colaboradores y el medio ambiente.<br>
+                        - Ofrecer nuestros servicios en diferentes
+                        puntos de la ciudad, para impactar de manera
+                        positiva la mayor cantidad de usuarios.
+                    </p>
+                </div>
+            </section>
+
+            <figure class="imga">
+                <img src="https://puntovet.com.co/wp-content/webp-express/webp-images/uploads/2022/12/punto_vet_nosotros.png.webp"
+                    alt="">
+            </figure>
+        </div>
+
+        <section class="tenemos">
+            <h2>Nuestra Propuesta</h2>
+            <p><strong>Servicio:</strong> Nos dedicamos a satisfacer y proporcionar soluciones a aquellos que eligen
+                contar
+                con nosotros.</p>
+            <p><strong>Respeto:</strong> Reconocemos a cada individuo como un ser único y valioso.</p>
+            <p><strong>Empatía:</strong> Conectamos y comprendemos las emociones y actitudes de las personas para
+                ofrecerles
+                exactamente lo que necesitan.</p>
+            <p><strong>Claridad:</strong> Mantenemos coherencia entre lo que pensamos, lo que decimos y lo que hacemos.
+            </p>
+            <p><strong>Innovación:</strong> Buscamos la renovación y actualización constante en procesos y tecnología,
+                aportando un mayor valor tanto a nuestros usuarios como a nuestros pacientes.</p>
+            <p><strong>Amor:</strong> Es la fuerza que nos impulsa a realizar cada tarea con excelencia.</p>
+        </section>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+
+    <footer>
+        <div class="new_footer">
+            <div class="new_footer_top">
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Contactenos</h4>
+                        <p>Dirección de la empresa<br> Teléfono de contacto<br> Correo electrónico</p>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Redes Sociales</h4>
+                        <div style="display: flex; justify-content: space-between;">
+                            <button class="btn">Facebook</button>
+                            <button class="btn">Twitter</button>
+                        </div>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Horarios</h4>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br> Sábado y Domingo: Cerrado</p>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+                <div class="copyrightFooter" style="text-align: center">
+                    <p>Copyright © veterinarios | Veterinaria y Productos - Diseñado por GRUPO Nose</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- DIV DE CARGA -->
+
+    <div class="carga">
+        <img src="img/carga.gif" width="250px" height="250px" alt="">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Sitio web Veterinaria Medellin">
+    <meta name="keywords" content="perros, gatos, animales, productos animales, veterinaria, medico perros">
+    <meta name="author" content="Grupo Js">
+    <meta http-equiv="content-language" content="es">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Blog</title>
+
+    <!-- CSS -->
+    <!-- Para la nav y para carrusel -->
+    <link rel="stylesheet" href="css/blog.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+
+    <!-- JavaScript -->
+    <!-- Script para el carrusel productos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // Espera a que la página esté completamente cargada
+        window.addEventListener('load', () => {
+            // Obtén el elemento con la clase "carga"
+            const carga = document.querySelector('.carga');
+            // Agrega la clase "parar" para quitar la pantalla de carga después de 1 segundo
+            setTimeout(() => {
+                carga.classList.add('parar');
+            }, 2000);
+        });
+    </script>
+
+    <!-- BARRA NAVEGACION -->
+
+    <header>
+        <div class="navWrapper" id="home">
+            <div class=" clearfix">
+                <h2 class="companyName">Veterinarios JS</h2>
+                <nav class="mainNav clearfix">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html" class="smoothScroll">Servicios</a></li>
+                        <li><a href="productos.html" class="smoothScroll">Productos</a></li>
+                        <li><a href="nosotros.html" class="smoothScroll">Nosotros</a></li>
+                        <li><a href="blog.html" class="smoothScroll">Blog</a></li>
+                    </ul>
+                </nav>
+            </div><!-- end .innerWrapper -->
+        </div><!-- end of .navWrapper -->
+    </header>
+
+    <main class="main">
+        <h2> Artículos que pueden interesarte </h2>
+        <article class="content-card1" id="cuidar">
+            <h1 class="content-card__title">Como cuidar bien de mi cachorro.</h1>
+            <div class="content-card__data">
+                <figure class="content-card__img">
+                    <img src="img/1540470933627.jpg" alt="imagen card" class="img-card">
+                    <button for="ver-mas1" class="btn" id="boton-1" onclick="verMas(extra1, boton1)">Leer más</button>
+                </figure>
+                <div class="contenido">
+                    <p class="content-card__description">Los cuidados de un cachorro no siempre son fáciles porque, al
+                        igual que pasa con un bebé, son muchos los aspectos que hay que tener en cuenta. Lo más
+                        conveniente es que consultes a un veterinario sobre las pautas a seguir para el cuidado de un
+                        cachorro durante sus primeras semanas de vida, ya que es quien mejor puede aconsejarte.</br>
+                        De todos modos, te mostramos cuáles son los principales consejos y trucos para cuidar a un
+                        perrito, de manera adecuada, y que pueden complementar su crecimiento y desarrollo.</br>
+                        1. Cuida su alimentación: La alimentación es uno de los aspectos más importantes para el buen
+                        desarrollo y crecimiento de nuestro cachorro. Es conveniente que la dieta cuente con todos los
+                        nutrientes, en las proporciones adecuadas, para cada etapa de su crecimiento. Las necesidades
+                        alimentarias van variando según el momento de su desarrollo:
+                    </p>
+                    <p class="content-card__description__extra" id="extra-1">
+                        Durante las primeras cuatro semanas de vida, se encuentra en la fase de amamantamiento, y su
+                        alimento se basa en leche materna.
+                        De la cuarta a la octava semana, la dieta del cachorro se modifica. Toman principalmente
+                        papillas compuestas por leche y pienso.
+                        A partir de la novena semana, podemos comenzar con el pienso. Es recomendable que sea de
+                        iniciación, para que cuente con los nutrientes y energía apropiadas para el cachorro. Además, es
+                        conveniente que sea natural. De esta manera, no integra colorantes ni conservantes.</br>
+                        2. Presta atención al sueño y descanso: El sueño es muy importante en las fases iniciales del
+                        crecimiento, ya que permite un correcto desarrollo. Los cachorros duermen la mayor parte del
+                        tiempo, superando las 12 horas diarias. Por ello, es conveniente encontrar un lugar de nuestro
+                        hogar en el que se sienta seguro y tranquilo para descansar. En ese sitio, podemos situar su
+                        camita llena de mantas y cojines, para que se sienta más protegido </br>
+                        3. Dedica tiempo a jugar con él: Los cachorros cuentan con mucha energía durante el día. Por
+                        ello, es importante dedicar un tiempo para jugar con ellos. Además, el juego cuenta con otros
+                        beneficios, ya que, a través de él, se afianza el vínculo, y el perro aprende a controlar su
+                        fuerza y otras conductas.
+
+                        Por otro lado, podemos dar a nuestro cachorro algunos juguetes o peluches, para que juegue él
+                        mismo y se entretenga. </br>
+                        4. Emplea pautas de educación: La etapa de cachorro es muy bonita, y nos ofrece grandes momentos
+                        junto a nuestra mascota. Pero además, es un buen momento para iniciar su educación, ya que,
+                        durante este período, los perros son más receptivos para el aprendizaje. Es importante dedicar
+                        tiempo a su adiestramiento, ya que las pautas de comportamiento que le enseñes ahora,
+                        determinarán su buen o mal comportamiento a lo largo de su vida. </br>
+                        5. Cuida su higiene: Dentro de los cuidados de un perrito, también debemos fijarnos en su
+                        higiene. Es importante cepillar al cachorro todos los días para eliminar la piel muerta y los
+                        pelos sobrantes. Además, si tiene mucho pelo, puedes repetir el cepillado varias veces al día.
+
+                        Respecto al baño, es conveniente destacar que los perros no necesitan un baño con regularidad, a
+                        no ser que el veterinario exprese lo contrario. Se recomienda poner las primeras vacunas antes
+                        de bañar a un perro por primera vez, aproximadamente a los 3 meses de edad. </br>
+                        6. Visita al veterinario: Para contar con todos los cuidados de un cachorro necesarios, es
+                        importante llevarle al veterinario de manera rutinaria. Así, cumplimos con los calendarios de
+                        vacunación, y nuestro cachorro está correctamente protegido de los parásitos, tanto internos
+                        como externos, manteniendo una buena salud.</br>
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="content-card2" id="mayor">
+            <h1 class="content-card__title">Como cuidar bien de mi peludo adulto mayor.</h1>
+            <div class="content-card__data">
+                <figure class="content-card__img">
+                    <img src="img/perros-viejos-1.jpg.webp" alt="imagen card" class="img-card">
+                    <button for="ver-mas2" class="btn" id="boton-2" onclick="verMas(extra2, boton2)">Leer más</button>
+                </figure>
+                <div class="contenido">
+                    <p class="content-card__description">
+                        Es nuestro adorable viejito. Ese que, a pesar de sus años,
+                        sigue siendo nuestro mejor compañero, y uno de los seres que más queremos en este mundo. Por eso
+                        y de la misma manera que hemos hecho en todas las etapas de su vida, cuidar del bienestar del
+                        perro anciano es fundamental para garantizarle una buena calidad de vida en sus últimos años.
+                        Una manera de acompañarle pero, también, de velar por su salud.</br>
+                        De la misma manera que nos informamos sobre qué necesita un cachorro o cuáles son los cuidados
+                        de un perro mayor, es momento de saber qué demanda nuestro can cuando llega a su tercera edad.
+                        Unos cuidados que no son complicados y que implican, únicamente, tomar conciencia de la nueva
+                        etapa en la que está nuestro animal.
+                        Y no: no son cuidados difíciles. Son, más bien, específicos y suponen cuidar a nuestro perro en
+                        una dimensión fundamentalmente física pero, también, emocional.
+                    </p>
+
+                    <p class="content-card__description__extra" id="extra-2">
+                        </br>
+                        1. Una alimentación acorde a su edad, el punto de partida: Crucial y vital. Si en cualquier
+                        momento de su vida la alimentación para perros juega un papel fundamental, en el caso de un
+                        perro anciano es todavía más importante. De ella dependerá buena parte de su salud pero,
+                        también, de su buen tono general. Algo que repercutirá directamente en su humor y en su nivel de
+                        actividad física.</br>
+                        2. Un tiempo diario solo para él, crucial para su salud emocional: Como decíamos antes, nuestros
+                        viejitos peludos tienen tendencia a volverse más demandantes de cariño y atención. Una petición
+                        que implica, incluso llevando una vida ajetreada, dedicarles un rato diario solamente para
+                        ellos. Y, aunque resulte complicado de entender, este tiempo es tan fundamental como cuidar qué
+                        comen. Supondrá cuidar de su buena salud emocional, y en esta etapa de su vida es tan importante
+                        como el resto.</br>
+                        3. Un rango de actividad física constante y sosegada, clave para el perro anciano: Aunque le
+                        veamos mayor, nuestro perro continúa necesitando un mínimo de ejercicio. Eso sí: adaptado a su
+                        edad pero, sobre todo, a su estado. A pesar de que no sea el de antes y no podamos someterle a
+                        grandes caminatas o carreras, es importante que continuemos teniendo una pauta regular de
+                        actividad y que ésta sea más calmada. Aunque acortemos nuestros paseos o ralenticemos el ritmo,
+                        esta actividad ayudará a mantener su musculatura y jugará a favor de sus articulaciones.</br>
+                        4. Un lugar cómodo para descansar, tan importante como cuidar de su sueño: Es habitual que un
+                        perro anciano tenga problemas para descansar correctamente. En ocasiones, porque tienen un
+                        deterioro cognitivo que hace que se desorientan con la oscuridad. En otras, por una de las
+                        dolencias más habituales: la artrosis en perros. En cualquier caso, velar porque nuestro viejito
+                        descanse correctamente es fundamental. Algo que podemos conseguir creando un espacio tranquilo y
+                        libre de obstáculos para él pero, también, ofreciéndole un espacio para descansar acorde a sus
+                        necesidades optando por camas y cunas para perros que les permitan sentirse cómodos.</br>
+                        5. Un cuidado constante del pelo, el último detalle a mimar: Si en líneas generales saber cómo
+                        cuidar el pelo de un perro correctamente es fundamental, lo es todavía más cuando se hacen
+                        mayores. Y es que, en esta época, el pelaje de nuestro can no lucirá tan vigoroso ni tan
+                        lustroso como solía. Y no, no es extraordinario: es solo una consecuencia del paso de los
+                        años.Por ello, es importante mantener una pauta regular y constante en los cuidados de su pelo.
+                        No solo permitirá mantenerlo limpio sino que, además, evitaremos posibles dolencias o
+                        infecciones derivadas de un mal mantenimiento de su piel.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="content-card3" id="curio">
+            <h1 class="content-card__title">10 curiosidades que (casi seguro) desconoces de tu perro.</h1>
+            <div class="content-card__data">
+                <figure class="content-card__img">
+                    <img src="img/dog-wearing-fake-mustache-royalty-free-image-136789966-1542377192.jpg"
+                        alt="imagen card" class="img-card">
+                    <button for="ver-mas3" class="btn" id="boton-3" onclick="verMas(extra3, boton3)">Leer más</button>
+                </figure>
+                <div class="contenido">
+                    <p class="content-card__description">El perro es el mejor amigo del hombre, eso lo sabemos. Pero,
+                        ¿desde cuándo se da esta relación tan especial? Los datos hablan de nada menos que 15.000 años.
+                        Y en todo este tiempo, hemos aprendido muchas cosas acerca de ellos, aunque siempre nos queda
+                        alguna por descubrir… </br>
+                        1. Tu perro es tan inteligente como un niño de dos años: ¿Sabías que los perros comprenden
+                        aproximadamente 250 palabras o gestos? Muy similar a lo que le ocurre a un niño de 2 años. Por
+                        eso, es tan común que perros y niños pequeños se suelan llevar tan bien</br>
+                        2. Pueden oír 4 veces más que los humanos: Los perros tienen bastante desarrollado el sentido
+                        del oído, y esto tiene que ver con las frecuencias de los sonidos y de cómo el cerebro de ellos
+                        responde. Son capaces de escuchar sonidos tan ‘bajos’ que nosotros somos incapaces de
+                        detectar.</br>
+                    </p>
+                    <p class="content-card__description__extra" id="extra-3">
+                        3. Físicamente, un perro de un año equivale a un humano de 15: Esto, lógicamente, también va a
+                        depender de cada raza… Por lo general, los perros grandes envejecen más rápido que los pequeños.
+                        Existen algunas calculadoras que te ayudan a saber con más exactitud la edad de tu perro.</br>
+                        4. Perros y gatos utilizan la misma técnica para beber agua: ¿Cuál es esta técnica? Seguro que
+                        es algo que nunca te habías cuestionado. Ambos doblan la punta de la lengua y elevan el agua en
+                        vertical hasta la boca.</br>
+                        5. Tienen las glándulas sudoríparas en las patas: Exactamente, entre las almohadillas de las
+                        patas. Es por eso, no es extraño que vayan dejando un rastro húmedo con sus patas los días más
+                        calurosos</br>
+                        6. Es capaz de echarte de menos: Sí, y aprenden nuestras rutinas y hábitos, por lo que pueden
+                        calcular cuándo es la hora del paseo diario, de cenar… Además, hay estudios que demuestran que
+                        los perros actúan de forma diferente cuando sus dueños se ausentaban por períodos de tiempo
+                        distintos.</br>
+                        7. Detecta tus sentimientos: Según diversos estudios, los perros pueden detectar cambios sutiles
+                        en nuestro olor, lo que les ayuda a comprender cómo nos sentimos (por ejemplo, si sudas, puede
+                        interpretar que estás nervioso o inquieto). También aseguran que las perras son capaces de
+                        detectar si un miembro de la familia está embarazada.</br>
+                        8. Sus bigotes le ayudan a ver en la oscuridad: No se trata de visión nocturna, claro está. Pero
+                        es cierto que gracias a sus bigotes pueden detectar cambios sutiles en las corrientes de aire,
+                        lo que les da información sobre el tamaño, la forma y la velocidad de las cosas cercanas. Así,
+                        pueden percibir mejor la proximidad de algún peligro, aunque sea de noche</br>
+                        9. Su sentido del olfato es de 1.000 a 10 millones de veces mejor que el nuestro: Dependiendo de
+                        la raza, los perros tiene entre 125 y 300 millones de glándulas olfativas, en comparación con
+                        sólo 5 millones para los humanos. Y la parte del cerebro del perro que controla el olor es 40
+                        veces más grande que la nuestra</br>
+                        10. Algunos no ladran:En concreto, una raza originaria del este de Basenji, muy empleado para la
+                        caza. Tiene la peculiaridad de no ladrar, pero sí emite un curioso sonido (parecido a un canto
+                        tirolés).
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+    <!-- PIE DE PAGINA -->
+
+    <footer>
+        <div class="new_footer">
+            <div class="new_footer_top">
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Contactenos</h4>
+                        <p>Dirección de la empresa<br> Teléfono de contacto<br> Correo electrónico</p>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Redes Sociales</h4>
+                        <div style="display: flex; justify-content: space-between;">
+                            <button class="btn">Facebook</button>
+                            <button class="btn">Twitter</button>
+                        </div>
+                    </div>
+                    <div style="flex: 1; z-index: 2;">
+                        <h4>Horarios</h4>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br> Sábado y Domingo: Cerrado</p>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+                <div class="copyrightFooter" style="text-align: center">
+                    <p>Copyright © veterinarios | Veterinaria y Productos - Diseñado por GRUPO Nose</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- DIV DE CARGA -->
+
+    <div class="carga">
+        <img src="img/carga.gif" width="250px" height="250px" alt="">
+    </div>
+
+    <script>
+        const boton1 = document.getElementById("boton-1")
+        const boton2 = document.getElementById("boton-2")
+        const boton3 = document.getElementById("boton-3")
+        const extra1 = document.getElementById("extra-1")
+        const extra2 = document.getElementById("extra-2")
+        const extra3 = document.getElementById("extra-3")
+
+        function verMas(x, y) {
+            x.classList.toggle("visible")
+            if (y.textContent == "Leer más") {
+                y.textContent = "Leer menos"
+            } else y.textContent = "Leer más"
+        }
+    </script>
+
+</body>
+
+</html>
